@@ -1,5 +1,5 @@
 ﻿# 100daysofpython
-This is a repository for the projects featured in Angela Yu's '100 Days of Code' Python course.
+This is a repository for the projects featured in Angela Yu's '100 Days of Code' Python course, and something of a journal with my thoughts on each day.
 
 ## [Day 1](https://github.com/camjeffrey/100daysofpython/tree/main/day_1)
 Day 1 begins quite simple, covering the basics of the **print()** and **input()** functions, simple errors and debugging, string concatenation, and variables.
