@@ -18,3 +18,11 @@ I had to do some extra research into string formatting as I didn't know beforeha
 so I was confused why I was getting outputs like 'Each person pays $27.9' instead of '$27.90.' Changing to {split:.2f} solved the issue.
 
 Obviously there are no protections against a user entering a non-number when asked for input, which would break the program, but that's a little beyond the scope of what we covered today and I'm sure will be attended to in later days.
+
+## [Day 3](https://github.com/camjeffrey/100daysofpython/tree/main/day_3)
+
+Day 3 introduced conditionals and logic operators, applying them in a simple choose-your-own-adventure game. Obviously these elements open up a staggering amount of functionality and it's nice to get the feeling things are already ramping up. 
+
+I think this would potentially be a good project to come back to at the end of the course because there are a lot of ideas that I haven't yet learned how to implement, that I think would make the game more interesting, such as some randomizer functionality, finding some elegent way to go back on a decision (maybe using a **while** loop?). There are probably plenty of ideas that I don't even know enough about Python yet to even imagine. It's really exciting to look ahead at everything still left to learn.
+
+Also, I'm unsure of the convention, but I used **sys.exit()** calls in the final block, even though they're unneccessary as the program is about to terminate anyway, simply to keep consistency with every other block. That feels intuitively correct to me.
