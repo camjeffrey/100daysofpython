@@ -57,15 +57,9 @@ elif computer_choice == 3:
 
 if user_choice == computer_choice:
     print("It's a draw.")
-elif user_choice == 1 and computer_choice == 2:
-    print("You lose.")
 elif user_choice == 1 and computer_choice == 3:
-    print("You won.")
-elif user_choice == 2 and computer_choice == 1:
-    print("You won.")
-elif user_choice == 2 and computer_choice == 3:
-    print("You lose.")
-elif user_choice == 3 and computer_choice == 1:
-    print("You lose.")
-elif user_choice == 3 and computer_choice == 2:
     print("You win.")
+elif user_choice > computer_choice:
+    print("You win.")
+elif user_choice < computer_choice:
+    print("You lose.")
