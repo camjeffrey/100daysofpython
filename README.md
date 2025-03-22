@@ -26,3 +26,9 @@ Day 3 introduced conditionals and logic operators, applying them in a simple cho
 I think this would potentially be a good project to come back to at the end of the course because there are a lot of ideas that I haven't yet learned how to implement, that I think would make the game more interesting, such as some randomizer functionality, finding some elegent way to go back on a decision (maybe using a **while** loop?). There are probably plenty of ideas that I don't even know enough about Python yet to even imagine. It's really exciting to look ahead at everything still left to learn.
 
 Also, I'm unsure of the convention, but I used **sys.exit()** calls in the final block, even though they're unneccessary as the program is about to terminate anyway, simply to keep consistency with every other block. That feels intuitively correct to me.
+
+## [Day 4](https://github.com/camjeffrey/100daysofpython/tree/main/day_4)
+
+Day 4 focused on implementing randomisation and an introduction to lists, and then creating a rock paper scissors game where the computer selects randomly. 
+
+I didn't struggle with this too much. My original win condition code, though functional, was a bit clunky and hard to read, so I cleaned it up a bit. I also didn't really implement lists at all in the project, but they just didn't seem necessary so I didn't want to force it in. I'm still looking forward to learning the techniques to catch invalid user input.
