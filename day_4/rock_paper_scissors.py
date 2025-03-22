@@ -59,6 +59,8 @@ if user_choice == computer_choice:
     print("It's a draw.")
 elif user_choice == 1 and computer_choice == 3:
     print("You win.")
+elif user_choice == 3 and computer_choice == 1:
+    print("You lose.")
 elif user_choice > computer_choice:
     print("You win.")
 elif user_choice < computer_choice:
