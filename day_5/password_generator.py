@@ -8,13 +8,13 @@ num_symbols = int(input("Symbols: "))
 
 password = []
 
-for letter in range(0, num_letters + 1):
+for letter in range(0, num_letters):
 	password.append(random.choice(string.ascii_letters))
 
-for number in range(0, num_numbers + 1):
+for number in range(0, num_numbers):
 	password.append(random.choice(string.digits))
 
-for symbol in range(0, num_symbols + 1):
+for symbol in range(0, num_symbols):
 	password.append(random.choice(string.punctuation))
 
 random.shuffle(password)
