@@ -32,3 +32,8 @@ Also, I'm unsure of the convention, but I used **sys.exit()** calls in the final
 Day 4 focused on implementing randomisation and an introduction to lists, and then creating a rock paper scissors game where the computer selects randomly. 
 
 I didn't struggle with this too much. My original win condition code, though functional, was a bit clunky and hard to read, so I cleaned it up a bit. I also didn't really implement lists at all in the project, but they just didn't seem necessary so I didn't want to force it in. I'm still looking forward to learning the techniques to catch invalid user input.
+
+
+## [Day 5](https://github.com/camjeffrey/100daysofpython/tree/main/day_5)
+
+Day 5 was a fun one, focusing on loops and ending with the creating of a password generator program. It was really good practice in reading documentation and researching how to do things, as I had to utilise the Python docs and Stack Overflow to familiarise myself with the **string** module, and the **join()** and **random.shuffle()** functions. 
