@@ -38,6 +38,6 @@ I didn't struggle with this too much. My original win condition code, though fun
 
 Day 5 was a fun one, focusing on loops and ending with the creating of a password generator program. It was really good practice in reading documentation and researching how to do things, as I had to utilise the Python docs and Stack Overflow to familiarise myself with the **string** module, and the **join()** and **random.shuffle()** functions. 
 
-## Day 5
+## Day 6
 
 There's no source code or directory for day 5, as the practice and projects were done on Reeborg's World, where we focused on defining our own functions and utilising **while** loops to help a robot jump over hurdles of unpredictable heights and spacing, and to solve a maze. Initially, I was a little disappointed, as defining a **turn_right()** function with **three turn_left()** calls seemed like a pretty unsatisfying way to learn about functions. But when we got into solving the hurdles of random heights and spacing, and solving mazes, I appreciated the content of the day more as it became all about thinking algorithmically, and obviously that kind of thinking will apply to all the functions I ever define and call. It's nice to have another couple of crucial programming concepts in play now for future projects.
