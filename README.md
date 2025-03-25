@@ -41,3 +41,13 @@ Day 5 was a fun one, focusing on loops and ending with the creating of a passwor
 ## Day 6
 
 There's no source code or directory for day 6, as the practice and projects were done on Reeborg's World, where we focused on defining our own functions and utilising **while** loops to help a robot jump over hurdles of unpredictable heights and spacing, and to solve a maze. Initially, I was a little disappointed, as defining a **turn_right()** function with **three turn_left()** calls seemed like a pretty unsatisfying way to learn about functions. But when we got into solving the hurdles of random heights and spacing, and solving mazes, I appreciated the content of the day more as it became all about thinking algorithmically, and obviously that kind of thinking will apply to all the functions I ever define and call. It's nice to have another couple of crucial programming concepts in play now for future projects.
+
+## [Day 7](https://github.com/camjeffrey/100daysofpython/tree/main/day_7)
+
+Day 7 was the first big challenge, in my opinion, but it was also a lot of fun and I'm proud of my hangman project.
+
+This was a really great way to combine everything I've learnt so far, and an excellent challenge of breaking down a larger problem into smaller ones. There are a lot of things that have to happen each time a user makes a guess, and a lot of conditions to consider, and it was challenging and fun to work through each possibility systematically and implement it into my code. I had to do some debugging as well; for instance, I originally didn't check if **guess** was in **secret_word**, and therefore I was giving the user a mistake for every single element in **secret_word** which != **guess**.
+
+I also have finally implemented a check for valid user input and I'm thrilled that it seems to work so well. I think I've got a really good grasp on loops and was able to implement solutions which check not only if the input was a single letter in the first place, but whether it had already been guessed, and return to the input prompt correctly.
+
+Overall, I'm very proud of this project and had tons of fun thinking through it.
