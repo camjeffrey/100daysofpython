@@ -50,4 +50,4 @@ This was a really great way to combine everything I've learnt so far, and an exc
 
 I also have finally implemented a check for valid user input and I'm thrilled that it seems to work so well. I think I've got a really good grasp on loops and was able to implement solutions which check not only if the input was a single letter in the first place, but whether it had already been guessed, and return to the input prompt correctly.
 
-Overall, I'm very proud of this project and had tons of fun thinking through it.
+Overall, I'm very proud of this project and had tons of fun thinking through it. I also completed the project before watching any of the course material for the day, as I could see that we weren't learning anything new but rather applying things we've already learnt to a more complex project, so I wanted to see if I could do it without hints or prompting from Angela. So I'm very excited to watch through the videos now and see how she has implemented everything and see another approach.
