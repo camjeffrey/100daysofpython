@@ -138,9 +138,8 @@ hangman_stages = ['''
 =========''']
 
 def has_user_won(word):
-    for i in word:
-        if i == "-":
-            return False
+    if "-" in word:
+        return False
     return True
 
 def get_guess():
