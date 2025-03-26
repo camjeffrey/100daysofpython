@@ -182,10 +182,10 @@ while True:
             guessed_letters.append(guess)
             for index, letter in enumerate(secret_word):
                 if guess == letter:
-                    print("Correct!\n***********************************")
+                    print("Correct!\n" + "*" * 20)
                     display_word[index] = guess
         else:
-            print("Incorrect guess.\n***********************************")
+            print("Incorrect guess.\n" + "*" * 20)
             guessed_letters.append(guess)
             number_of_mistakes += 1
     
