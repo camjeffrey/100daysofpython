@@ -146,7 +146,7 @@ def has_user_won(word):
 def get_guess():
     while True:
         user_input = input("Guess a letter: ")
-        if user_input not in string.ascii_letters:
+        if user_input not in string.ascii_letters or len(user_input) > 1:
             print("Invalid guess. Please enter a single letter.")
         else:
             guess = user_input.lower()
