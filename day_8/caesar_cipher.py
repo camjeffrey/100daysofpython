@@ -27,8 +27,6 @@ def encrypt(text, shift):
 def decrypt(text, shift):
     return caesar_cipher(text, shift, encrypt = False)
 
-
-
 print("Caesar Cipher")
 
 while True:
