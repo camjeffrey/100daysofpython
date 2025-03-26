@@ -155,7 +155,7 @@ def print_game_state():
     print(hangman_stages[number_of_mistakes])
     print(''.join(display_word))
     print("Guessed: " + (' '.join(guessed_letters)))
-    
+  
 secret_word = list(random.choice(wordlist))
 secret_word_string = ''.join(secret_word)
 display_word = list("-" * len(secret_word))
@@ -180,9 +180,9 @@ while True:
             print("Already guessed.")
         elif guess in secret_word:
             guessed_letters.append(guess)
+            print("Correct!\n" + "*" * 20)
             for index, letter in enumerate(secret_word):
                 if guess == letter:
-                    print("Correct!\n" + "*" * 20)
                     display_word[index] = guess
         else:
             print("Incorrect guess.\n" + "*" * 20)
