@@ -14,7 +14,7 @@ def highest_bid(dictionary):
         if bid > high_bid:
             highest_bidder = name
             high_bid = bid
-    return high_bidder, high_bid
+    return highest_bidder, high_bid
 
 print("""
                          ___________
