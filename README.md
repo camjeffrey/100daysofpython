@@ -61,3 +61,9 @@ I'm also pretty proud of my forward planning in this project, for instance using
 ## [Day 9](https://github.com/camjeffrey/100daysofpython/tree/main/day_9)
 
 Day 9 was an introduction to dictionaries, and expanded a little bit on nested dictionaries and lists (though this didn't end up playing into the project). I found the project, a silent auction program which tracks bidders and bids and awards a winner, fairly simple, even if starting out I do find the syntax concerning dictionaries a little strange. This project felt like a bit of a stp back in complexity but looking ahead, I can see a Blackjack capstone project on day 11 so I'm excited to tackle that.
+
+## [Day 10](https://github.com/camjeffrey/100daysofpython/tree/main/day_10)
+
+Day 10 was an introduction to functions with outputs, which I already had a bit of familiarity with. The project was a calculator, which would give the user the option of doing an entirely new calculation, or having the result of the previous calculation be the first number. I'm not gonna lie, I threw this together late at night. It works, but I'm sure there were much cleaner, clearer, more elegant ways to do it all. I was a little puzzled about handling the old result and the new result, making sure it was intgrated correctly with the **while** loop, etc., but writing out step-by-step what had to happen at each step in the code helped me figure it out.
+
+Also, not that anybody would, but **eval()** is used here with absolutely no protections so don't ever deploy this anywhere.
