@@ -12,9 +12,9 @@ def highest_bid(dictionary):
     high_bid = 0
     for name, bid in dictionary.items():
         if bid > high_bid:
-            highest_bidder = name
+            high_bidder = name
             high_bid = bid
-    return highest_bidder, high_bid
+    return high_bidder, high_bid
 
 print("""
                          ___________
