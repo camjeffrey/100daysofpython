@@ -83,7 +83,7 @@ while True:
         print("Blackjack! Player wins.")
         break
     elif blackjack_check(dealer_hand) and not blackjack_check(player_hand):
-        print(f"Dealer's hand: {' '.join(dealer_hand)}")
+        print(f"Dealer's hand: {' '.join(dealer_hand)}\n")
         print("Dealer has Blackjack! Dealer wins.")
         break
     
