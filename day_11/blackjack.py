@@ -70,63 +70,75 @@ print(""""
                                
 """)
 
-opening_deal()
-print(f"Your hand: {' '.join(player_hand)}\n")
-print(f"Dealer's hand: {dealer_hand[0]} ?\n")
-
-if blackjack_check(player_hand) and blackjack_check(dealer_hand):
-    print(f"Dealer's hand: {' '.join(dealer_hand)}")
-    print("Player and dealer both have Blackjack! Draw.")
-elif blackjack_check(player_hand) and not blackjack_check(dealer_hand):
-    print("Blackjack! Player wins.")
-elif blackjack_check(dealer_hand) and not blackjack_check(player_hand):
-    print(f"Dealer's hand: {' '.join(dealer_hand)}")
-    print("Dealer has Blackjack! Dealer wins.")
-print(f"Total: {hand_count(player_hand)}\n")
-
 while True:
-    if hand_count(player_hand) > 21:
-        print("Player busts!\n")
+    opening_deal()
+    print(f"Your hand: {' '.join(player_hand)}\n")
+    print(f"Dealer's hand: {dealer_hand[0]} ?\n")
+
+    if blackjack_check(player_hand) and blackjack_check(dealer_hand):
         print(f"Dealer's hand: {' '.join(dealer_hand)}")
-        input("")
+        print("Player and dealer both have Blackjack! Draw.")
         break
-    decision = input("Press 'h' to hit, or 's' to stand: ")
-    if decision not in ['h', 's']:
-        print("Invalid selection.")
-        input("")
-    elif decision == 'h':
-        deal(player_hand)
-        print(f"\nYour hand: {' '.join(player_hand)}\n")
-        print(f"Total: {hand_count(player_hand)}\n")
-    elif decision == 's':
-        print(f"\nPlayer stood on {hand_count(player_hand)}\n")
+    elif blackjack_check(player_hand) and not blackjack_check(dealer_hand):
+        print("Blackjack! Player wins.")
+        break
+    elif blackjack_check(dealer_hand) and not blackjack_check(player_hand):
         print(f"Dealer's hand: {' '.join(dealer_hand)}")
-        input("")
+        print("Dealer has Blackjack! Dealer wins.")
         break
+    
+    print(f"Total: {hand_count(player_hand)}\n")
 
-if hand_count(dealer_hand) > 16:
-    print(f"Total: {hand_count(dealer_hand)}")
+    while True:
+        if hand_count(player_hand) > 21:
+            print("Player busts!\n")
+            print(f"Dealer's hand: {' '.join(dealer_hand)}")
+            input("")
+            break
+        decision = input("Press 'h' to hit, or 's' to stand: ")
+        if decision not in ['h', 's']:
+            print("Invalid selection.")
+            input("")
+        elif decision == 'h':
+            deal(player_hand)
+            print(f"\nYour hand: {' '.join(player_hand)}\n")
+            print(f"Total: {hand_count(player_hand)}\n")
+        elif decision == 's':
+            print(f"\nPlayer stood on {hand_count(player_hand)}\n")
+            print(f"Dealer's hand: {' '.join(dealer_hand)}")
+            input("")
+            break
 
-while hand_count(dealer_hand) <= 16:
-    deal(dealer_hand)
-    print(f"Dealer's hand: {' '.join(dealer_hand)}")
-    print(f"Total: {hand_count(dealer_hand)}")
-    if hand_count(dealer_hand) <= 16:
-        input("")
+    if hand_count(dealer_hand) > 16:
+        print(f"Total: {hand_count(dealer_hand)}")
 
-print(f"\nDealer's final hand: {' '.join(dealer_hand)}")
-print(f"Dealer's total: {hand_count(dealer_hand)}")
+    while hand_count(dealer_hand) <= 16:
+        deal(dealer_hand)
+        print(f"Dealer's hand: {' '.join(dealer_hand)}")
+        print(f"Total: {hand_count(dealer_hand)}")
+        if hand_count(dealer_hand) <= 16:
+            input("")
 
-input("")
+    print(f"\nDealer's final hand: {' '.join(dealer_hand)}")
+    print(f"Dealer's total: {hand_count(dealer_hand)}")
 
-if hand_count(player_hand) == hand_count(dealer_hand):
-    print(f"Dealer and player both stood on {hand_count(player_hand)}! Hand is a draw.")
-elif hand_count(player_hand) > 21:
-    print("Dealer wins!")
-elif hand_count(player_hand) > hand_count(dealer_hand) and not hand_count(player_hand) > 21:
-    print("Player wins!")
-elif hand_count(player_hand) < hand_count(dealer_hand) and not hand_count(dealer_hand) > 21:
-    print("Dealer wins!")
-elif hand_count(dealer_hand) > 21 and not hand_count(player_hand) > 21:
-    print("Dealer busts!")
+    input("")
 
+    if hand_count(player_hand) == hand_count(dealer_hand):
+        print(f"Dealer and player both stood on {hand_count(player_hand)}! Hand is a draw.")
+    elif hand_count(player_hand) > 21:
+        print("Dealer wins!")
+    elif hand_count(player_hand) > hand_count(dealer_hand) and not hand_count(player_hand) > 21:
+        print("Player wins!")
+    elif hand_count(player_hand) < hand_count(dealer_hand) and not hand_count(dealer_hand) > 21:
+        print("Dealer wins!")
+    elif hand_count(dealer_hand) > 21 and not hand_count(player_hand) > 21:
+        print("Dealer busts!")
+
+    another_hand = input("Press 'enter' to play again, or type 'q' to quit: ")
+    if another_hand == 'q':
+        break
+    else:
+        player_hand = []
+        dealer_hand = []
+        running_deck = deck
