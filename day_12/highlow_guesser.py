@@ -64,6 +64,8 @@ while True:
             lives -= 1
             print(f"Guesses remaining: {lives}")
 
+    if lives == 0:
+        print(f"The number was {answer}.\n")
     play_again = input("Type 'y' to play again!: ")
     if play_again == 'y':
         continue
