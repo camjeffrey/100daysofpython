@@ -22,6 +22,18 @@ def difficulty(mode):
         lives = 5
     return lives
 
+def mode_selection():
+    while True:
+        mode = input("Select difficulty: type 'easy' for 10 guesses, type 'hard' for 5: ")
+        if mode.lower() != 'easy' and mode.lower() != 'hard':
+            print("Invalid selection.")
+        elif mode == 'easy':
+            lives = difficulty('easy')
+            return 'easy'
+        else:
+            lives = difficulty('hard')
+            return 'hard'
+
 def get_guess():
     while True:
         try:
@@ -35,21 +47,13 @@ def get_guess():
 
 while True:
 
+    # Begin game loop
+
     answer = random_number()
 
     print("I'm thinking of a number between 0 - 100 (inclusive)...\n")
-    print(f"DEBUG: The answer is {answer}")
 
-    while True:
-        mode = input("Select difficulty: type 'easy' for 10 guesses, type 'hard' for 5: ")
-        if mode.lower() != 'easy' and mode.lower() != 'hard':
-            print("Invalid selection.")
-        elif mode == 'easy':
-            lives = difficulty('easy')
-            break
-        else:
-            lives = difficulty('hard')
-            break
+    lives = difficulty(mode_selection()) # mode_selection() returns 'easy' or 'hard', which is then assessed by difficulty()
         
     while lives > 0:
 
