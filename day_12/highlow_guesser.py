@@ -15,24 +15,15 @@ def guess_checker(guess, number):
         print("Correct!\n")
         return True
 
-def difficulty(mode):
-    if mode == 'easy':
-        lives = 10
-    elif mode == 'hard':
-        lives = 5
-    return lives
-
 def mode_selection():
     while True:
         mode = input("Select difficulty: type 'easy' for 10 guesses, type 'hard' for 5: ")
         if mode.lower() != 'easy' and mode.lower() != 'hard':
             print("Invalid selection.")
         elif mode.lower() == 'easy':
-            lives = difficulty('easy')
-            return 'easy'
+            return 10
         else:
-            lives = difficulty('hard')
-            return 'hard'
+            return 5
 
 def get_guess():
     while True:
@@ -53,7 +44,7 @@ while True:
 
     print("I'm thinking of a number between 0 - 100 (inclusive)...\n")
 
-    lives = difficulty(mode_selection()) # mode_selection() returns 'easy' or 'hard', which is then assessed by difficulty()
+    lives = mode_selection()
         
     while lives > 0:
 
