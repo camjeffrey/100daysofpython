@@ -83,3 +83,8 @@ It's not a perfect implementation, as I can't figure out at the minute how to al
 I had another look at my blackjack program and decided to move as much of the core game loop into functions as I possibly could, which I think made the code much cleaner and more professional. It also, I think, enhanced the readability quite a bit and should help a lot if I do decide to implement things like split pairs in the future.
 
 I also put all of the blackjack combination checks into a function which returned a boolean value, but had to ask Claude.ai for some guidance on how to follow on from that to make the game replayable if it returned **True**. It gave me the idea of encapsulating the rest of the game loop in an **if not** statement, which was a neat idea and something I'll remember in the future! I think it would also be useful if I did implement split pairs, as I could probably do something similar to catch another abnormal game state while maintaining replayability. Something like a **player_has_pair** check which returns a boolean, and turning the **if not blackjack** statement into **if not blackjack and if not split pairs**. I'll have another look at it at some later date.
+
+
+## [Day 12](https://github.com/camjeffrey/100daysofpython/tree/main/day_12)
+
+Day 12 was substantially easier than day 11, focusing on global and local scopes and ending with a higher / lower number guessing game. There's not much to say about this one, though the content on scope did prompt me to ensure that my assignment of the answer to a random integer occured *within* my while loop, so that it was reassigned every time the while loop ran. Other than that, putting the program together only took me maybe 10 or 15 minutes and didn't present any significant challenges.
