@@ -27,7 +27,7 @@ def mode_selection():
         mode = input("Select difficulty: type 'easy' for 10 guesses, type 'hard' for 5: ")
         if mode.lower() != 'easy' and mode.lower() != 'hard':
             print("Invalid selection.")
-        elif mode == 'easy':
+        elif mode.lower() == 'easy':
             lives = difficulty('easy')
             return 'easy'
         else:
