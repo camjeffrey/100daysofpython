@@ -88,3 +88,7 @@ I also put all of the blackjack combination checks into a function which returne
 ## [Day 12](https://github.com/camjeffrey/100daysofpython/tree/main/day_12)
 
 Day 12 was substantially easier than day 11, focusing on global and local scopes and ending with a higher / lower number guessing game. There's not much to say about this one, though the content on scope did prompt me to ensure that my assignment of the answer to a random integer occured *within* my while loop, so that it was reassigned every time the while loop ran. Other than that, putting the program together only took me maybe 10 or 15 minutes and didn't present any significant challenges.
+
+## Day 13
+
+No code or directory for this one, as today focusd on the debugging process.
