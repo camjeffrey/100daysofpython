@@ -91,4 +91,4 @@ Day 12 was substantially easier than day 11, focusing on global and local scopes
 
 ## Day 13
 
-No code or directory for this one, as today focusd on the debugging process.
+No code or directory for this one, as today focused on the debugging process.
