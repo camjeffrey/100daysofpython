@@ -42,6 +42,7 @@ def print_items(current_item, new_item):
 
 
 def main():
+	current_score = 0
 	current_item = random.choice(data)
 	while True:
 		new_item = new_item_select(current_item)
@@ -53,11 +54,12 @@ def main():
 		user_guess = get_guess()
 
 		if user_guess == correct_answer:
-			print("Correct!")
+			current_score += 1
+			print(f"\nCorrect! Current score: {current_score}\n")
 			if new_item['follower_count'] > current_item['follower_count']:
 				current_item = new_item
 		else:
-			print("Incorrect!")
+			print(f"\nIncorrect! Final score: {current_score}")
 			return
 
 main()
